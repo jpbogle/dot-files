@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/Jeremy/Documents/Capsule/codect/.git'
+let g:netrw_dirhist_2='/usr/local/etc/nginx'
+let g:netrw_dirhist_3='/Users/Jeremy/.emacs.d'
+let g:netrw_dirhist_4='/Users/Jeremy/.vim'
