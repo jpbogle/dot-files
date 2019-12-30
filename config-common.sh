@@ -60,12 +60,7 @@ link_file() {
 }
 
 #ln -sf $(pwd)/git/.gitaliases $HOME/.gitaliases
-
-#mkdir -p $HOME/.config/fish
-#ln -sf $(pwd)/fish/functions "$HOME/.config/fish"
-#ln -sf $(pwd)/fish/config.fish "$HOME/.config/fish/config.fish"
-
 #ln -sf $(pwd)/bin $HOME
-
+link_file "$(pwd)/fish" "$HOME/.config/fish"
 link_file "$(pwd)/vim/.vim" "$HOME/.vim"
 link_file "$(pwd)/vim/.vimrc" "$HOME/.vimrc"

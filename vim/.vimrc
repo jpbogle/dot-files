@@ -38,15 +38,9 @@ nnoremap <silent> G maG<CR>
 
 " faster vertical moving
 nnoremap H 5h
-vnoremap J 5j
+nnoremap J 5j
 nnoremap K 5k
-vnoremap l 5l
-nnoremap <c-Down> 5j
-nnoremap <c-Up> 5k
-vnoremap <c-Down> 5j
-vnoremap <c-Up> 5k
-inoremap <c-Down> <Down><Down><Down><Down><Down>
-inoremap <c-Up> <Up><Up><Up><Up><Up>
+nnoremap L 5l
 
 " cut copy paste
 nnoremap <c-x> dd
@@ -59,14 +53,6 @@ vmap <c-c> :w !pbcopy<CR><CR>
 nmap <c-_> <Plug>NERDCommenterToggle
 vmap <c-_> <Plug>NERDCommenterToggle<CR>gv
 imap <c-_> <c-o><Plug>NERDCommenterToggle
-
-" tabs
-nmap <c-l> gt
-vmap <c-l> <c-o>gt
-imap <c-l> <c-o>gt
-nmap <c-k> gT
-vmap <c-k> <c-o>gT
-imap <c-k> <c-o>gT
 
 " Quit and write files
 nmap <leader>w :w<CR>
