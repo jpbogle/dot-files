@@ -1,7 +1,8 @@
 execute pathogen#infect()
+map <Space> <Leader>
 
 "color scheme
-colorscheme palenight
+colorscheme material-monokai 
 syntax enable
 set background=dark
 set termguicolors
@@ -36,19 +37,16 @@ nnoremap <silent> T ma:0<CR>
 nnoremap <silent> G maG<CR>
 
 " faster vertical moving
-nnoremap I 5j
-nnoremap K 5k
+nnoremap H 5h
 vnoremap J 5j
-vnoremap K 5k
+nnoremap K 5k
+vnoremap l 5l
 nnoremap <c-Down> 5j
 nnoremap <c-Up> 5k
 vnoremap <c-Down> 5j
 vnoremap <c-Up> 5k
 inoremap <c-Down> <Down><Down><Down><Down><Down>
 inoremap <c-Up> <Up><Up><Up><Up><Up>
-map <ESC>f e
-map! <ESC>f <ESC>e
-
 
 " cut copy paste
 nnoremap <c-x> dd
@@ -70,6 +68,11 @@ nmap <c-k> gT
 vmap <c-k> <c-o>gT
 imap <c-k> <c-o>gT
 
+" Quit and write files
+nmap <leader>w :w<CR>
+nmap <leader>q :q<CR>
+nmap <leader><leader> :wq<CR>
+imap <leader> <ESC>
 
 " folding
 set foldenable
