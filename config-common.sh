@@ -5,7 +5,7 @@ print_success() {
 }
 
 print_error() {
-  printf "\e[0;31m  [✖] Failed to unlink %s %s\e[0m\n" "$1" "$2"
+  printf "\e[0;31m  [✖] Failed to link %s %s\e[0m\n" "$1" "$2"
 }
 
 print_question() {
