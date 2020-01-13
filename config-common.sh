@@ -64,3 +64,9 @@ link_file() {
 link_file "$(pwd)/fish" "$HOME/.config/fish"
 link_file "$(pwd)/vim/.vim" "$HOME/.vim"
 link_file "$(pwd)/vim/.vimrc" "$HOME/.vimrc"
+link_file "$(pwd)/bash/.bash_profile" "$HOME/.bash_profile"
+link_file "$(pwd)/bash/.bash_prompt" "$HOME/.bash_prompt"
+link_file "$(pwd)/bash/.profile" "$HOME/.profile"
+link_file "$(pwd)/bash/.path" "$HOME/.path"
+
+

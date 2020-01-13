@@ -16,6 +16,9 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+" scroll offset
+set so=5
+
 " UI configuration
 set number
 set numberwidth=1
@@ -42,12 +45,15 @@ nnoremap J 5j
 nnoremap K 5k
 nnoremap L 5l
 
+" arrow keys option moving
+nnoremap <Esc>f w
+nnoremap <Esc>b b
+
 " cut copy paste
 nnoremap <c-x> dd
-vnoremap <c-x> <c-o>dd
 inoremap <c-x> <c-o>dd
-vmap <c-x> :!pbcopy<CR>  
-vmap <c-c> :w !pbcopy<CR><CR>
+vnoremap <leader>d :!pbcopy<CR>
+vnoremap <leader>y :w !pbcopy<CR><CR>
 
 " commenting
 nmap <c-_> <Plug>NERDCommenterToggle
@@ -57,8 +63,7 @@ imap <c-_> <c-o><Plug>NERDCommenterToggle
 " Quit and write files
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
-nmap <leader><leader> :wq<CR>
-imap <leader> <ESC>
+nmap <leader><space> :wq<CR>
 
 " folding
 set foldenable
