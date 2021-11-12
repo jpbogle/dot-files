@@ -52,8 +52,7 @@ nnoremap <Esc>b b
 " cut copy paste
 nnoremap <c-x> dd
 inoremap <c-x> <c-o>dd
-vnoremap <leader>d :!pbcopy<CR>
-vnoremap <leader>y :w !pbcopy<CR><CR>
+vnoremap Y "*y<esc>
 
 " commenting
 nmap <c-_> <Plug>NERDCommenterToggle

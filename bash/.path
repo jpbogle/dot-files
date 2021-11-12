@@ -1,8 +1,0 @@
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-export JAVA_APPLE_HOME="$(/usr/libexec/java_home -v 11.0.4)"
-
-alias java8='export JAVA_HOME=$JAVA_8_HOME'
-alias javaApple='export JAVA_HOME=$JAVA_APPLE_HOME'
-
-#default javaApple
-export JAVA_HOME=$JAVA_APPLE_HOME
