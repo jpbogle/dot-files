@@ -1,3 +1,9 @@
+fish_add_path /Users/jbogle/.local/share/solana/install/active_release/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path /Users/jbogle/.cargo/bin
+fish_add_path /opt/homebrew/opt/openssl@3/bin
+fish_add_path /opt/homebrew/opt/openssl@1.1/bin
+fish_add_path /Users/jbogle/Code/solana/target/release
 
 function ll --description "List contents of directory in long format with hidden files"
     command ls --color=auto -alhf $argv
